@@ -1,0 +1,16 @@
+@import "scss/_reset";
+@import "scss/_responsive";
+
+/*----basic setup--------------------------*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: red;
+}
+
+
+

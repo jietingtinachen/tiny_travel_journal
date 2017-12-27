@@ -1,0 +1,41 @@
+; === client config ===
+(config
+
+	; pipez will read source files from this dir
+	; this is relative to your workspace
+	src-dir: "src"
+
+	; pipez will put the compiled assets to this dir
+	; files in this directory will be overwritten
+	dst-dir: "static"
+
+	; A url map will be written to this file.
+	; The file will contain the unique url and hash for each asset compiled.
+	; You can use this file to implement caching, versioning or subresource integrity.
+	url-map: "_pipez_urlmap.json"
+
+	; A local development server serving the assets
+	; Only used, when you running 'pipez dev'.
+	server-host: "127.0.0.1"
+	server-port: 8087
+	server-tls-key: ""
+	server-tls-cert: ""
+
+)
+
+
+; === module imports ===
+
+; import specific versions of modules
+(def scss (import "sass-3.4.19/scss"))
+
+(copy "index.html")
+
+(asset "main.css" (scss (source "scss/main.scss")))
+
+; Concatenate some .js files together and write the result to baz.js
+; (asset "baz.js"
+; 	(concat
+; 		(source "foo.js")
+; 		(source "bar.js")))
+
