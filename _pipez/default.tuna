@@ -16,7 +16,7 @@
 
 	; A local development server serving the assets
 	; Only used, when you running 'pipez dev'.
-	server-host: "127.0.0.1"
+	server-host: "0.0.0.0"
 	server-port: 8087
 	server-tls-key: ""
 	server-tls-cert: ""
@@ -30,7 +30,22 @@
 (def scss (import "sass-3.4.19/scss"))
 
 (copy "index.html")
-
+(copy "assets/1.png")
+(copy "assets/2.png")
+(copy "assets/3.png")
+(copy "assets/4.png")
+(copy "assets/5.png")
+(copy "assets/6.png")
+(copy "assets/logo.png")
+(copy "assets/hero.jpg")
+(copy "assets/peak1.jpg")
+(copy "assets/peak2.jpg")
+(copy "assets/peak3.jpg")
+(copy "assets/peak4.jpg")
+(copy "assets/peak5.jpg")
+(copy "assets/email.gif")
+(copy "assets/favicon.ico")
+(copy "script.js")
 (asset "main.css" (scss (source "scss/main.scss")))
 
 ; Concatenate some .js files together and write the result to baz.js
@@ -38,4 +53,3 @@
 ; 	(concat
 ; 		(source "foo.js")
 ; 		(source "bar.js")))
-
