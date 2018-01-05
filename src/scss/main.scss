@@ -76,8 +76,9 @@ h1 {
 	top: 30px;
 	right: 170px;
 	@include on-mobile {
-		top:150px;
-		right:246px;
+		top:200px;
+		left:32px;
+		right:auto;
 	}
 }
 #decor3 {
@@ -105,7 +106,7 @@ h1 {
   right: 70px;
 	@include on-mobile {
 		top: 70px;
-		right: 0px;
+		right: 20px;
 	}
 }
 #decor6 {
