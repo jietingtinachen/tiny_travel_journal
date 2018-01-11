@@ -223,11 +223,13 @@ h1 {
       width: 100%; } }
 
 .sneakPeak h1 {
-  padding-top: 1.0em; }
+  padding-top: 1.8em;
+  padding-bottom: 0.6em; }
 @media (max-width: 800px) {
   .sneakPeak {
     height: auto;
-    padding-top: 15px; }
+    padding-top: 1.2em;
+    padding-bottom: 10px; }
     .sneakPeak img {
       width: 100%;
       padding-bottom: 35px;
@@ -273,11 +275,11 @@ h1 {
   color: #4A4A4A; }
 
 .ig .grayText {
-  margin-top: 5px;
-  margin-bottom: 8px; }
+  margin-top: 20px;
+  margin-bottom: 18px; }
   @media (max-width: 800px) {
     .ig .grayText {
-      margin-bottom: 25px; } }
+      margin-bottom: 34px; } }
 
 #igDisplay img {
   height: auto;
