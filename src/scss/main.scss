@@ -140,6 +140,13 @@ h1 {
 		align-items: center;
 
 	}
+	@include on-tablet-desktop {
+		.button {
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 .topBar {
 	background-color: #34335F;
