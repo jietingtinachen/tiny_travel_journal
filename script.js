@@ -24,6 +24,7 @@ $(document).ready(function() {
   }, 5000);
 
   function post(data) {
+    console.log(data);
     data.formkey = "1FAIpQLSc7VVDGxz6sehCjWx3sVGtGom9XHSeE7NJMqRoaa2WNmZZk3A";
     $.ajax({
       url: "https://docs.google.com/forms/d/e/1FAIpQLSc7VVDGxz6sehCjWx3sVGtGom9XHSeE7NJMqRoaa2WNmZZk3A/formResponse",
@@ -32,13 +33,14 @@ $(document).ready(function() {
       dataType: "xml",
     });
   }
+
   $(function() {
   	$("#newsLetter .buttonWires").click(function(e) {
 	    var form = $("#newsLetter");
-	    var email = form.find(".email");
+	    var email = form.find(".emailInput");
 	    var submit = form.find(".submit");
   		var data = {
-  			"entry.616378690": email.val(),
+  			"entry.616378690": $(email).val(),
   		};
   		setTimeout(function() {
   				submit.val("Thank you!");

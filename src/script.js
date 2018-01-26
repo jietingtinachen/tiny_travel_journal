@@ -33,6 +33,7 @@ $(document).ready(function() {
       dataType: "xml",
     });
   }
+
   $(function() {
   	$("#newsLetter .buttonWires").click(function(e) {
 	    var form = $("#newsLetter");
